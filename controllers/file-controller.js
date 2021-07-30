@@ -1,11 +1,12 @@
-import { v2 } from "cloudinary";
+import pkg from "cloudinary";
+const { v2: cloudinary } = pkg
 import File from "../models/file.js";
 import mongoose from "mongoose";
 import https from "https";
 import nodemailer from "nodemailer";
 import emailTemplate from "../utils/email-template.js";
 
-const cloudinary = v2
+
 
 export const postUpload = async (req, res, next) => {
   if (!req.file) {

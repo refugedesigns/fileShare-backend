@@ -38,8 +38,10 @@ app.use((error, req, res, next) => {
   res.status(status).json({ message: message, data: data });
 });
 
-await connectDB();
-
-app.listen(process.env.PORT, () => {
-  console.log("Server is running");
+connectDB().then(connection => {
+  app.listen(process.env.PORT, () => {
+    console.log("Server is running");
+  });
 });
+
+
