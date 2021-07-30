@@ -3,7 +3,8 @@ import dotenv from "dotenv";
 import cors from "cors";
 import compression from "compression"
 
-import { v2 as cloudinary } from "cloudinary";
+import pkg from "cloudinary";
+const { v2: cloudinary } = pkg
 
 import fileRouter from "./router/file-router.js";
 import connectDB from "./helpers/db.js";
