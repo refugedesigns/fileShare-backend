@@ -1,0 +1,8 @@
+{
+  "files.autoSave": "afterDelay",
+  "editor.fontFamily": "Fira Code, Consolas, 'Courier New', monospace",
+  "editor.fontSize": 18,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "editor.formatOnPaste": true
+}
